@@ -1,0 +1,21 @@
+.favorite{
+    background-image: linear-gradient(var(--color-brand-light), var(--color-brand-dark));
+}
+
+.favorite__icon{
+    display: flex;
+    align-items: center;
+    gap: .5em;
+
+    padding: .2em;
+    background-color: var(--color-brand-light);
+
+    font-weight: 800;
+}
+
+.favorite__icon img{
+    display: inline;
+
+    height: 1em;
+    width: auto;
+}
