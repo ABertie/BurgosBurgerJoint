@@ -7,6 +7,7 @@ BIG__PICTURE.src = ALL__SRC[index];
 ALL__SRC.forEach(function (imgSrc) {
     const IMG = document.createElement("img")
     IMG.src = imgSrc;
+    IMG.alt = "burger"
     IMG.classList.add("rolloverGallery__img")
     PICTURE__CONTAINER.appendChild(IMG);
 });

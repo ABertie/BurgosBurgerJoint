@@ -22,27 +22,28 @@
 <body>
     <header>
         <nav class="primaryNav">
-            <img src="./asset/img/burgos logo@2x.png" alt="Burgos">
+            <a href="./"><img src="./asset/img/burgos logo@2x.png" alt="Burgos"></a>
             <menu>
-                <li>Home</li>
-                <li>Galleri</li>
-                <li>Anbefalde</li>
-                <li>Kontakt</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Galleri</a></li>
+                <li><a href="#recommendations">Anbefalde</a></li>
+                <li><a href="#contact">Kontakt</a></li>
             </menu>
         </nav>
 
-        <section class="hero">
+        <section class="hero" id="home">
             <img class="hero__img" src="./asset/img/hero01.jpg" alt="Burger med pomfritter">
             <div class="hero__poster">
                 <h1>Vælg din favorit yummy</h1>
-                <button><a href="./">Start</a></button>
+                <button><a href="./">START</a></button>
             </div>
         </section>
     </header>
 
     <main>
 
-        <section class="advertising">
+        <!-- tager hvis jeg når det -->
+        <!-- <section class="advertising">
             <a href="./">
                 <img src="./asset/img/reklame01.jpg" alt="bøf" class="advertising__img">
                 <article class="advertising__article">
@@ -52,13 +53,13 @@
                         burger</p>
                 </article>
             </a>
-        </section>
+        </section> -->
 
-        <section class="gallery">
+        <section class="gallery" id="gallery">
             <h1>Galleri</h1>
 
             <figure class="gallery__rolloverGallery">
-                <img src="" alt="" class="rolloverGallery__bigPicture">
+                <img src="" alt="burger" class="rolloverGallery__bigPicture">
                 <nav class="rolloverGallery__smallPictures"></nav>
                 <img src="./asset/img/galleri01.jpg" alt="">
             </figure>
@@ -92,7 +93,7 @@
             </article>
         </section>
 
-        <section class="favorite">
+        <section class="favorite" id="recommendations">
             <h1>anbefalede yummies</h1>
             <div class="favorite__container">
                 <article class="favorite__card">
@@ -137,7 +138,7 @@
     </main>
 
     <footer>
-        <form action="./index.html" class="submitForm" novalidate>
+        <form action="./index.html" id="contact" class="submitForm" novalidate>
             <h1>Kontakt</h1>
             <input type="text" placeholder="Navn">
             <span class="submitForm__massage"></span>
@@ -149,11 +150,11 @@
         </form>
 
         <section class="followUs">
-            <!-- <img src="./" alt=""> -->
+            <img src="./asset/img/footer_burger.png" alt="burger">
             <article class="followUs__article">
-                <h1>Følg os på instagram</h1>
-                <a href="">
-                    <span></span>
+                <a href="./">
+                    <h1>Følg os på instagram</h1>
+                    <span class="cirkel"></span>
                     <p>@burgos_yummies</p>
                 </a>
             </article>

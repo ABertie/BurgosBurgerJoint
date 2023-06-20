@@ -1,3 +1,5 @@
+@import url("./asset/css/header.css");
+
 :root{
     --color-light: #ffffff;
     --color-grey: #707070;
@@ -19,10 +21,39 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 5em;
+}
+
 body{
     font-family: var(--font-primary);
+
+    position: relative;
 }
 
 img{
+    display: block;
     width: 100%;
+    object-fit: cover;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+button{
+    background: none;
+    border: none;
+    color: inherit;
+    font-family: inherit;
+}
+
+header nav li{
+    list-style-type: none;
+}
+
+.followUs p{
+    font-family: var(--font-secondary);
 }

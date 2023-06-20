@@ -1,0 +1,137 @@
+header{
+    position: relative;
+
+    font-size: .8em;
+    color: var(--color-light);
+}
+
+.hero__img {
+    max-height: 100vh;
+}
+
+/* primary Navigation */
+
+.primaryNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    inset: 0 0 auto 0;
+    
+    padding: 1em;
+    background-color: var(--color-dark);
+    
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.primaryNav img {
+    height: 3em;
+    width: auto;
+}
+
+.primaryNav menu{
+    display: flex;
+    justify-content: space-around;
+    gap: 1em;
+    
+    width: 100%;
+}
+
+/* Hero */
+
+.hero__poster{
+    inset: auto 0 0 0;
+    
+    padding: 1em;
+    background-image: linear-gradient(var(--color-brand-light-transparent), var(--color-brand-dark-transparent));
+    background-color: var(--color-dark);
+}
+
+.hero__poster h1{
+    font-size: 1.75em;
+}
+
+.hero__poster button{
+    padding: .75em 2.5em;
+    background-color: var(--color-brand-light);
+    border-radius: 10px;
+    
+    color: var(--color-dark);
+    font-weight: 700;
+    font-size: 1em;
+}
+
+@media screen and (min-width: 450px) {
+    .primaryNav{
+        flex-wrap: nowrap;
+        
+        position: absolute;
+
+        background-color: transparent;
+    }
+    
+    .primaryNav menu{
+        width: auto;
+        gap: 1.5em;
+    }
+
+    .hero__poster{
+        position: absolute;
+
+        background-color: transparent;
+    }
+    
+    .hero__poster h1{
+        font-size: 2em;
+        
+        margin-bottom: .5em;
+    }
+}
+
+@media screen and (min-width: 700px){
+    header{
+        font-size: 1em;
+    }
+
+    .primaryNav{
+        padding: 3em 4em;
+    }
+
+    .primaryNav menu{
+        width: auto;
+        gap: 1.5em;
+    }
+
+    .hero__poster{
+        padding: 3em 4em;
+    }
+
+    .hero__poster h1{
+        font-size: 3em;
+    }
+}
+
+@media screen and (min-width: 1030px){
+    .hero__poster{
+        display: flex;
+        flex-direction: column  ;
+        text-align: center;
+        justify-content: center;
+
+        inset: 0 45% 0 20% ;
+
+        padding: 2em;
+    }
+
+    .hero__poster h1{
+        font-size: 5vw;
+    }
+
+    .hero__poster button{
+        margin: 0 auto;
+        font-size: 2vw;
+    }
+}
