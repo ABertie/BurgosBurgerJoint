@@ -1,5 +1,6 @@
 @import url("./asset/css/header.css");
 @import url("./asset/css/gallary.css");
+@import url("./asset/css/footer.css");
 
 :root{
     --color-light: #ffffff;
@@ -46,17 +47,28 @@ a{
     color: inherit;
 }
 
-button{
+button, input, textarea{
     background: none;
     border: none;
     color: inherit;
     font-family: inherit;
+    resize: none;
+    font-size: 1em;
+}
+
+input::placeholder, textarea::placeholder{
+    color: inherit;
+}
+
+button{
+    padding: .75em 2.5em;
+    background-color: var(--color-brand-light);
+    
+    color: var(--color-dark);
+    font-weight: 700;
+    font-size: 1em;
 }
 
 header nav li{
     list-style-type: none;
-}
-
-.followUs p{
-    font-family: var(--font-secondary);
 }

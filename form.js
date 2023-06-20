@@ -12,7 +12,7 @@ FORM.addEventListener("submit", function (event){
 })
 
 function validateForm(element) {
-    if (element.type === "submit" && succes != false) succes = true
+    if (element.type === "submit" && succes !== false) succes = true
     else if (element.type === "text" && !element.value) makeMassage(element, "Du skal skrive dit navn!")
     else if (element.type === "email" && !element.value) makeMassage(element, "Du skal skrive din email!")
     else if (element.type === "email"){
