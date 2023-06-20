@@ -1,0 +1,28 @@
+:root{
+    --color-light: #ffffff;
+    --color-grey: #707070;
+    --color-dark: #000000;
+    --color-brand-light: #fbb731;
+    --color-brand-dark: #f37335;
+    --color-brand-alternative: #0c4c7b;
+
+    --color-brand-light-transparent: rgb(251 183 49 / .8);
+    --color-brand-dark-transparent: rgb(243 115 53 / .8);
+
+    --font-primary: 'Nunito Sans', sans-serif;
+    --font-secondary: 'Open Sans', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font-primary);
+}
+
+img{
+    width: 100%;
+}
