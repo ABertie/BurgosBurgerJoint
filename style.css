@@ -1,4 +1,5 @@
 @import url("./asset/css/header.css");
+@import url("./asset/css/gallary.css");
 
 :root{
     --color-light: #ffffff;
@@ -13,6 +14,8 @@
 
     --font-primary: 'Nunito Sans', sans-serif;
     --font-secondary: 'Open Sans', sans-serif;
+
+    --computer-padding-width: 20%;
 }
 
 *{
